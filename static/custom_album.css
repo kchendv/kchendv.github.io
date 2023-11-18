@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "CircularStd";
+    src: url('circular-std-medium-500.ttf');
+}
+
 .custom-header {
     border-bottom: 1px solid #000;
     background-color: #fff;
@@ -9,9 +14,30 @@
     z-index: 500;
 }
 
-.custom-navbar-container{
+.custom-resume-link {
+    color: rgb(60, 132, 145);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "CircularStd";
+    -webkit-transition: .2s ease-out;
+}
+
+.custom-resume-link:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 132, 145);
+    text-decoration: none;
+}
+
+.custom-navbar-container {
     padding-left:25px;
     padding-right:25px;
+}
+
+#customNavbarLinks {
+    color:#000;
+    padding-left: 50px;
+    font-size: large;
+    text-decoration: none;
 }
 
 #customBrand {
@@ -28,5 +54,90 @@
 
 #customIntroBlock {
     display: block;
-    max-width: 600px;
+    max-width: 500px;
 }
+
+.custom-heading {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "CircularStd";
+}
+
+.custom-lead {
+    margin-top: 1.5rem;
+    text-align: justify;
+    font-family: "CircularStd";
+    font-weight: 100;
+    font-size: 13pt;
+    line-height: 130%;
+}
+
+.custom-section-heading {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "CircularStd";
+}
+
+.custom-card {
+    border: none;
+    height: 425px;
+}
+
+.custom-card-overlay {
+    background: rgb(18, 89, 102);
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition:opacity 0.3s ease;
+}
+
+.custom-card:hover .custom-card-overlay {
+    opacity:0.8;
+}
+
+.custom-card-text {
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 40px;
+    max-width: 70%;
+    line-height: 1;
+    font-family: "CircularStd";
+}
+
+.card-text-title{
+    font-size: 20pt;
+    font-weight: 900;
+}
+
+.card-text-description{
+    font-size: 13pt;
+    font-weight: 10;
+    line-height: 120%;
+}
+
+
+.card-text-tools{
+    
+    font-family: "CircularStd";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 70%;
+    text-align: right;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #FFF;
+    font-size: 10pt;
+    font-weight: 10;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
