@@ -1,6 +1,6 @@
 @font-face {
     font-family: "CircularStd";
-    src: url('circular-std-medium-500.ttf');
+    src: url('./circular-std-medium-500.ttf');
 }
 
 .custom-header {
