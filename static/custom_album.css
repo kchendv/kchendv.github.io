@@ -1,0 +1,32 @@
+.custom-header {
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 500;
+}
+
+.custom-navbar-container{
+    padding-left:25px;
+    padding-right:25px;
+}
+
+#customBrand {
+    color: #000;
+}
+
+#customJumbotron {
+    display: flex;
+    align-items: center;
+    height: 35vh;
+    min-height: 500px;
+    max-width: 1140px;
+}
+
+#customIntroBlock {
+    display: block;
+    max-width: 600px;
+}
