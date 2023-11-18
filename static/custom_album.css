@@ -15,7 +15,7 @@
 }
 
 .custom-resume-link {
-    color: rgb(60, 132, 145);
+    color: rgb(75, 167, 184);
     font-size: 20px;
     font-weight: 100;
     font-family: "CircularStd";
@@ -24,17 +24,17 @@
 
 .custom-resume-link:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(60, 132, 145);
+    background-color: rgb(75, 167, 184);
     text-decoration: none;
 }
 
 .custom-navbar-container {
-    padding-left:25px;
-    padding-right:25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #customNavbarLinks {
-    color:#000;
+    color: #000;
     padding-left: 50px;
     font-size: large;
     text-decoration: none;
@@ -85,19 +85,28 @@
     height: 425px;
 }
 
+.custom-project-image {
+    height: 425px;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    background-color: rgb(245, 245, 245);
+    padding:60px
+}
+
 .custom-card-overlay {
     background: rgb(18, 89, 102);
     opacity: 0;
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    transition:opacity 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
 }
 
 .custom-card:hover .custom-card-overlay {
-    opacity:0.8;
+    opacity: 0.8;
 }
 
 .custom-card-text {
@@ -120,9 +129,7 @@
     line-height: 120%;
 }
 
-
 .card-text-tools{
-    
     font-family: "CircularStd";
     position: absolute;
     bottom: 0;
@@ -136,8 +143,6 @@
     font-weight: 10;
 }
 
-
-
 ::-webkit-scrollbar {
     width: 0px;
-  }
+}
