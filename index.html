@@ -1,313 +1,823 @@
 <!DOCTYPE html>
-<html lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
-    filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(90%) sepia(50%) !important;
-}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
-  background-color: var(--darkreader-inline-bgcolor) !important;
-}
-[data-darkreader-inline-bgimage] {
-  background-image: var(--darkreader-inline-bgimage) !important;
-}
-[data-darkreader-inline-border] {
-  border-color: var(--darkreader-inline-border) !important;
-}
-[data-darkreader-inline-border-bottom] {
-  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
-}
-[data-darkreader-inline-border-left] {
-  border-left-color: var(--darkreader-inline-border-left) !important;
-}
-[data-darkreader-inline-border-right] {
-  border-right-color: var(--darkreader-inline-border-right) !important;
-}
-[data-darkreader-inline-border-top] {
-  border-top-color: var(--darkreader-inline-border-top) !important;
-}
-[data-darkreader-inline-boxshadow] {
-  box-shadow: var(--darkreader-inline-boxshadow) !important;
-}
-[data-darkreader-inline-color] {
-  color: var(--darkreader-inline-color) !important;
-}
-[data-darkreader-inline-fill] {
-  fill: var(--darkreader-inline-fill) !important;
-}
-[data-darkreader-inline-stroke] {
-  stroke: var(--darkreader-inline-stroke) !important;
-}
-[data-darkreader-inline-outline] {
-  outline-color: var(--darkreader-inline-outline) !important;
-}
-[data-darkreader-inline-stopcolor] {
-  stop-color: var(--darkreader-inline-stopcolor) !important;
-}</style><style class="darkreader darkreader--variables" media="screen">:root {
-   --darkreader-neutral-background: #191816;
-   --darkreader-neutral-text: #fff5d5;
-   --darkreader-selection-background: #30537b;
-   --darkreader-selection-text: #ffffe8;
-}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
-    background-color: #1f1e1b !important;
-}
-html {
-    color-scheme: dark !important;
-}
-html, body, input, textarea, select, button, dialog {
-    background-color: #1f1e1b;
-}
-html, body, input, textarea, select, button {
-    border-color: #897c66;
-    color: #ffffe8;
-}
-a {
-    color: #79a0c7;
-}
-table {
-    border-color: #6b685d;
-}
-::placeholder {
-    color: #d7c6a9;
-}
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-    background-color: #4a481c !important;
-    color: #ffffe8 !important;
-}
-::-webkit-scrollbar {
-    background-color: #292824;
-    color: #cebea1;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #58554c;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #6f6c61;
-}
-::-webkit-scrollbar-thumb:active {
-    background-color: #5c5950;
-}
-::-webkit-scrollbar-corner {
-    background-color: #1f1e1b;
-}
-::selection {
-    background-color: #30537b !important;
-    color: #ffffe8 !important;
-}
-::-moz-selection {
-    background-color: #30537b !important;
-    color: #ffffe8 !important;
-}</style>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="static/favicon.png">
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Chen — Software Engineer</title>
+  <meta name="description" content="Kevin Chen is a software development engineer at Amazon working on Kindle Search — LLM-powered natural language search, distributed backends on AWS, and Android interfaces at scale.">
+  <meta name="author" content="Kevin Chen">
+  <meta name="theme-color" content="#080b10">
 
-    <title>Kevin Chen</title>
+  <link rel="icon" href="static/favicon.png">
+  <link rel="canonical" href="https://kchendv.github.io/">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kevin Chen — Software Engineer">
+  <meta property="og:description" content="Software development engineer at Amazon working on Kindle Search. Applied LLMs, distributed systems and Android at scale.">
+  <meta property="og:url" content="https://kchendv.github.io/">
+  <meta property="og:image" content="https://kchendv.github.io/static/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
-    <link href="./bootstrap/album.css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
-    <link href="./static/custom_album.css" rel="stylesheet">
-  <meta name="darkreader" content="8c19273207504307a71b8c8d27c3068c"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
-    background-color: #795e1c !important;
-    border-color: #e7c55b !important;
-    color: #ffffda !important;
-}
-#vimvixen-console-frame {
-    color-scheme: light !important
-}
-::placeholder {
-    opacity: 0.5 !important;
-}
-#edge-translate-panel-body,
-.MuiTypography-body1,
-.nfe-quote-text {
-    color: var(--darkreader-neutral-text) !important;
-}
-gr-main-header {
-    background-color: #2a3d3d !important;
-}
-.tou-z65h9k,
-.tou-mignzq,
-.tou-1b6i2ox,
-.tou-lnqlqk {
-    background-color: var(--darkreader-neutral-background) !important;
-}
-.tou-75mvi {
-    background-color: #132122 !important;
-}
-.tou-ta9e87,
-.tou-1w3fhi0,
-.tou-1b8t2us,
-.tou-py7lfi,
-.tou-1lpmd9d,
-.tou-1frrtv8,
-.tou-17ezmgn {
-    background-color: #0c0b0a !important;
-}
-.tou-uknfeu {
-    background-color: #221a0d !important;
-}
-.tou-6i3zyv {
-    background-color: #405b5c !important;
-}
-div.mermaid-viewer-control-panel .btn {
-  fill: var(--darkreader-neutral-text);
-  background-color: var(--darkreader-neutral-background);
-}
-svg g rect.er {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.er.entityBox {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.er.attributeBoxOdd {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.er.attributeBoxEven {
-  fill-opacity: 0.8 !important;
-  fill: var(--darkreader-selection-background);
-}
-svg rect.er.relationshipLabelBox {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g g.nodes rect, svg g g.nodes polygon {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.task {
-  fill: var(--darkreader-selection-background) !important;
-}
-svg line.messageLine0, svg line.messageLine1 {
-  stroke: var(--darkreader-neutral-text) !important;
-}
-div.mermaid .actor {
-  fill: var(--darkreader-neutral-background) !important;
-}</style></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <body>
+  <link href="static/css/theme.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
 
-    <header>
-      <div class="navbar navbar-dark custom-header">
-        <div class="container d-flex justify-content-between custom-navbar-container">
-          <a id="customBrand" href="" class="navbar-brand d-flex align-items-center">
-            <strong>kevin chen</strong>
-          </a>
-          <ul class="nav navbar-right">
-            <li>
-              <a id="customNavbarLinks" href="https://github.com/kchendv"  target="_blank" rel="noopener noreferrer">
-                <strong>github</strong>
-              </a>
-            </li>
-            <li>
-              <a id="customNavbarLinks" href="https://www.linkedin.com/in/kchendv/" target="_blank" rel="noopener noreferrer">
-                <strong >linkedin</strong>
-              </a>
-            </li>
-            <li>
-              <a id="customNavbarLinks" href="mailto:kchendv@gmail.com" target="_blank" rel="noopener noreferrer">
-                <strong >email</strong>
-              </a>
-            </li>
-          </ul>
+  <script>
+    /* Runs before first paint so the right palette and motion mode are set
+       without a flash. These two constants are the site's boot settings.
 
-        </div>
+       DEFAULT_THEME  "dark" | "light" | "system"
+                      What a first-time visitor sees. "system" follows their OS
+                      colour-scheme setting. After that the header toggle wins
+                      and the choice is remembered in localStorage.
+
+       MOTION         "always" | "auto" | "reduced"
+                      "always"  animations always run.
+                      "auto"    animations are switched off for visitors whose
+                                OS has "reduce motion" enabled.
+                      "reduced" animations are always off.
+    */
+    (function () {
+      var DEFAULT_THEME = "system";
+      var MOTION = "always";
+
+      var html = document.documentElement;
+      html.classList.add("js");
+
+      var stored = null;
+      try { stored = localStorage.getItem("kc-theme"); } catch (e) {}
+      html.setAttribute(
+        "data-theme",
+        stored === "light" || stored === "dark"
+          ? stored
+          : DEFAULT_THEME === "system"
+            ? (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark")
+            : DEFAULT_THEME
+      );
+
+      var reduce =
+        MOTION === "reduced" ||
+        (MOTION === "auto" && matchMedia("(prefers-reduced-motion: reduce)").matches);
+      html.setAttribute("data-motion", reduce ? "reduced" : "full");
+    })();
+  </script>
+
+  <noscript>
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.21.67.8.55C20.71 21.39 24 17.08 24 12 24 5.73 18.77.5 12 .5Z"/>
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.78C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/>
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/>
+        <path d="m3 7 9 6 9-6"/>
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2v2m0 16v2M4.2 4.2l1.4 1.4m12.8 12.8 1.4 1.4M2 12h2m16 0h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path d="M20.5 14.8A8.8 8.8 0 0 1 9.2 3.5a8.8 8.8 0 1 0 11.3 11.3Z"/>
+      </symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24">
+        <path d="M12 5v14m0 0-6-6m6 6 6-6"/>
+      </symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14m0 0-6-6m6 6-6 6"/>
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24">
+        <path d="M8 16 16 8m0 0H9m7 0v7"/>
+      </symbol>
+      <symbol id="i-file" viewBox="0 0 24 24">
+        <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Zm0 0v5h5M9 13h6M9 17h4"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m4 12.5 5 5 11-11"/>
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-2-15-4 18"/>
+      </symbol>
+      <symbol id="i-server" viewBox="0 0 24 24">
+        <rect x="3" y="3.5" width="18" height="7" rx="2"/>
+        <rect x="3" y="13.5" width="18" height="7" rx="2"/>
+        <path d="M7 7h.01M7 17h.01"/>
+      </symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24">
+        <rect x="5" y="5" width="14" height="14" rx="2.5"/>
+        <rect x="9.5" y="9.5" width="5" height="5" rx="1"/>
+        <path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/>
+      </symbol>
+      <symbol id="i-mobile" viewBox="0 0 24 24">
+        <rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/>
+        <path d="M10.5 18.5h3"/>
+      </symbol>
+      <symbol id="i-terminal" viewBox="0 0 24 24">
+        <rect x="2.5" y="4" width="19" height="16" rx="2.5"/>
+        <path d="m7 10 2.5 2L7 14m5 .5h5"/>
+      </symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9.5"/>
+        <path d="M2.5 12h19M12 2.5c2.5 2.6 3.8 6 3.8 9.5S14.5 18.9 12 21.5c-2.5-2.6-3.8-6-3.8-9.5S9.5 5.1 12 2.5Z"/>
+      </symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24">
+        <rect x="2.5" y="7.5" width="19" height="12" rx="2.5"/>
+        <path d="M8.5 7.5v-2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2M2.5 12.5h19"/>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M12 21.5s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+        <circle cx="12" cy="10.2" r="2.6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Kevin Chen — home">
+        <span class="brand__mark" aria-hidden="true">KC</span>
+        <span>kevin chen</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a class="nav__link" href="#about" style="--i:0">About</a>
+        <a class="nav__link" href="#experience" style="--i:1">Experience</a>
+        <a class="nav__link" href="#work" style="--i:2">Work</a>
+        <a class="nav__link" href="#skills" style="--i:3">Skills</a>
+        <a class="nav__link" href="#contact" style="--i:4">Contact</a>
+      </nav>
+      <div class="nav__scrim" aria-hidden="true"></div>
+
+      <div class="header__actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+          <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
       </div>
-   
-    </header>
+    </div>
+  </header>
 
-    <main role="main">
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="hero__grid" aria-hidden="true"></div>
 
-      <section class="jumbotron">
-        <div id="customJumbotron" class="container" style="gap: 3rem">
-          <div id="customIntroBlock">
-            <h1 class="custom-heading jumbotron-heading">Hi! My name is Kevin.</h1>
-            <p class="custom-lead lead text-muted">Currently a software engineer @ Amazon, MCS student @ UIUC. A 2x Amazon intern and highest honors graduate from UIUC, I have been applying my skills to design large-scale software systems serving millions of daily active users. I am an experienced developer in frontend (web, mobile and custom OS built on C++), backend (VM, Cloud, containerization technology), data analysis and applied artificial intelligence.</p>
-            <a class="custom-resume-link" href="static/resume.pdf">See my resume here.</a>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="status" data-reveal style="--reveal-delay:0">
+            <span class="status__dot" aria-hidden="true"></span>
+            Seattle, WA · open to interesting problems
+          </span>
+
+          <h1 class="hero__title" data-reveal style="--reveal-delay:1">
+            Hi, I'm <span class="hero__title-accent">Kevin Chen</span>.
+          </h1>
+
+          <p class="hero__role" data-reveal style="--reveal-delay:2">
+            <span class="hero__role-prefix">I build</span>
+            <span class="typewriter" data-typewriter='["LLM-powered search","distributed backends","Android interfaces","systems that scale"]'></span><span class="typewriter__caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero__lead" data-reveal style="--reveal-delay:3">
+            Software Development Engineer II at Amazon, where I build Kindle Search for
+            30 million monthly readers — most recently the LLM-powered natural language
+            search behind it. I work across AWS service architecture, applied LLMs and
+            Android.
+          </p>
+
+          <div class="hero__actions" data-reveal style="--reveal-delay:4">
+            <a class="btn btn--primary" href="static/resume.pdf" target="_blank" rel="noopener">
+              View résumé
+              <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#work">
+              See my work
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
           </div>
-          <div id="customIntroBlock">
-             <img src="static/profile.jpg" alt="a photo of me" style="max-width: 100%; height: auto; border-radius: 8px;">
+
+          <div class="hero__socials" data-reveal style="--reveal-delay:5">
+            <span class="hero__socials-label">Elsewhere</span>
+            <a class="icon-btn" href="https://github.com/kchendv" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="icon icon--filled" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/kchendv/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon icon--filled" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            </a>
+            <a class="icon-btn" href="mailto:kchendv@gmail.com" aria-label="Email">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            </a>
           </div>
         </div>
-      </section>
-      <p class="custom-section-heading">Featured Work.</p>
-      <div class="album py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-sm-12 mt-3">
-              <div class="custom-card card mb-4">
-                <img class="card-img-top custom-project-image" alt="Thumbnail [100%x225]" src="static/projects/kindle.png" data-holder-rendered="true">
-                <a>
-                  <div class="custom-card-overlay">
-                    <div class="custom-card-text">
-                      <p class="card-text-title">Kindle for Android</p>
-                      <p class="card-text-description">Implemented new full stack service which provides new product recommendations to users by aggregating trending search results. Improved search latency and reduce OS-separation by migrating search view components to React-based WebView.</p>
-                      
-                    </div>
-                    <p class="card-text-tools">Java, Kotlin, React, Node, Python, SQL, Javascript, Typescript, AWS Lambda, DynamoDB, S3, SQS, Cloudwatch, Athena</p>
 
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 mt-3">
-              <div class="custom-card card mb-4">
-                <img class="card-img-top custom-project-image" alt="Thumbnail [100%x225]" src="static/projects/finance.JPG" data-holder-rendered="true">
-                <a href="https://github.com/kchendv/excel-finance" target="_blank" rel="noopener noreferrer" >
-                  <div class="custom-card-overlay">
-                    <div class="custom-card-text">
-                      <p class="card-text-title">Personal Finance Organizer</p>
-                      <p class="card-text-description">A finance organizer tool that parses transactional data from Mint.com and Venmo API, and applies custom labelling and budget analysis, as well as periodic syncing via the Google Sheets API.</p>
-                      
-                    </div>
-                    <p class="card-text-tools">Python, Pandas, urllib, pygsheets, openpyxl, venmo_api, regex</p>
-
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 mt-3">
-              <div class="custom-card card mb-4">
-                <img class="card-img-top custom-project-image" alt="Thumbnail [100%x225]" style="padding:50px" src="static/projects/tol.PNG" data-holder-rendered="true">
-                <a href="https://github.com/kchendv/TOL-trainer" target="_blank" rel="noopener noreferrer" >
-                  <div class="custom-card-overlay">
-                    <div class="custom-card-text">
-                      <p class="card-text-title">Linguistics Olympiad Testing Platform</p>
-                      <p class="card-text-description">An-online testing/grading platform for the National Linguistics Olympiad</p>
-                      
-                    </div>
-                    <p class="card-text-tools">Python, Flask, SQL, SQLite, HTML, CSS, Javascript, CMD</p>
-
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 mt-3">
-              <div class="custom-card card mb-4">
-                <img class="card-img-top custom-project-image" alt="Thumbnail [100%x225]" src="static/projects/proxy.JPG" data-holder-rendered="true">
-                <a href="https://github.com/kchendv/messenger-proxy-bot" target="_blank" rel="noopener noreferrer" >
-                  <div class="custom-card-overlay">
-                    <div class="custom-card-text">
-                      <p class="card-text-title">Messenger Proxy Bot</p>
-                      <p class="card-text-description">A comprehensive messenger chatbot utility that provides an interface to Google, Wikipedia and ChatGPT on the messenger platform. Users may interact with a bot user in CLI form, retrieving data in the form of plain text.</p>
-                      
-                    </div>
-                    <p class="card-text-tools">Python, fbchat, dotenv, requests, urllib, pandas, wikipedia</p>
-
-                  </div>
-                </a>
-              </div>
-            </div>
+        <div class="hero__portrait" data-reveal="scale" style="--reveal-delay:2">
+          <div class="portrait-ring" aria-hidden="true"></div>
+          <div class="portrait">
+            <img src="static/profile.jpg" alt="Kevin Chen hiking in the Cascades" width="1024" height="1024">
+          </div>
+          <div class="portrait-badge">
+            <span class="portrait-badge__icon" aria-hidden="true">
+              <svg class="icon"><use href="#i-briefcase"/></svg>
+            </span>
+            <span>
+              <span class="portrait-badge__label">Currently</span>
+              <span class="portrait-badge__value">SDE II @ Amazon</span>
+            </span>
           </div>
         </div>
       </div>
 
-    </main>
-    <script src="./bootstrap/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./bootstrap/popper.min.js.download"></script>
-    <script src="./bootstrap/bootstrap.min.js.download"></script>
-    <script src="./bootstrap/holder.min.js.download"></script>
-  
+      <a class="scroll-cue" href="#about">
+        Scroll
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+      </a>
+    </section>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style><style class="darkreader darkreader--sync" media="screen"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
+    <!-- ================= MARQUEE =================
+         The item list is duplicated exactly once; the track animates to -50%
+         so the loop is seamless. Keep both halves identical. -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">Kotlin</span>
+        <span class="marquee__item">Python</span>
+        <span class="marquee__item">AWS Bedrock</span>
+        <span class="marquee__item">GraphQL</span>
+        <span class="marquee__item">Jetpack Compose</span>
+        <span class="marquee__item">PyTorch</span>
+        <span class="marquee__item">ECS</span>
+        <span class="marquee__item">LoRA</span>
+        <span class="marquee__item">ReactJS</span>
+        <span class="marquee__item">Swift</span>
+        <span class="marquee__item">Docker</span>
+        <span class="marquee__item">Kotlin</span>
+        <span class="marquee__item">Python</span>
+        <span class="marquee__item">AWS Bedrock</span>
+        <span class="marquee__item">GraphQL</span>
+        <span class="marquee__item">Jetpack Compose</span>
+        <span class="marquee__item">PyTorch</span>
+        <span class="marquee__item">ECS</span>
+        <span class="marquee__item">LoRA</span>
+        <span class="marquee__item">ReactJS</span>
+        <span class="marquee__item">Swift</span>
+        <span class="marquee__item">Docker</span>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">About</span>
+          <h2 class="section-title">Engineer, linguist, systems person.</h2>
+        </div>
+
+        <div class="about__grid">
+          <div data-reveal="left">
+            <div class="prose">
+              <p>
+                I'm a <strong>software development engineer at Amazon</strong> on Kindle Search,
+                a service used by roughly <strong>30 million people a month</strong>. Lately that
+                has meant <strong>LLM-powered natural language search</strong> on Bedrock — intent
+                classification, query rewriting and suggestion generation, all grounded against
+                catalog metadata.
+              </p>
+              <p>
+                The half of that work I care most about is making it trustworthy: a golden-set
+                regression benchmark with human relevance grading, prompt-injection filtering, and
+                automatic fallback to lexical search when a generation is low-confidence or slow.
+                It took library-scoped title resolution from <strong>~0.3 to ~0.75 F1</strong>.
+              </p>
+              <p>
+                Before Amazon I studied <strong>Computer Science + Linguistics</strong> at UIUC,
+                graduating with highest honors and a Bronze Tablet, and I've since finished a
+                <strong>Master of Computer Science</strong> there. The linguistics half was not a
+                detour — four spoken languages and a research streak in federated learning both
+                feed the same interest in how meaning survives a lossy channel.
+              </p>
+            </div>
+
+            <ul class="focus-list">
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                <span>Applied LLMs — intent classification, query rewriting, grounding, prompt-injection filtering, eval harnesses</span>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                <span>Distributed backends on AWS — ECS, GraphQL gateways, asynchronous Kotlin orchestration</span>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                <span>Android at scale — Jetpack Compose, accessibility compliance, reusable UI systems</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stats" data-reveal="right">
+            <div class="stat">
+              <div class="stat__value"><span data-count="30" data-suffix="M">0</span></div>
+              <p class="stat__label">Monthly users on the search service I help own</p>
+            </div>
+            <div class="stat">
+              <div class="stat__value"><span data-count="0.75" data-decimals="2" data-prefix="~">0</span></div>
+              <p class="stat__label">F1 on library-scoped title resolution, up from ~0.3 lexical</p>
+            </div>
+            <div class="stat">
+              <div class="stat__value"><span data-count="54" data-suffix="%">0</span></div>
+              <p class="stat__label">Smaller Android UI codebase after the Compose migration</p>
+            </div>
+            <div class="stat">
+              <div class="stat__value"><span data-count="20" data-prefix="~" data-suffix="%">0</span></div>
+              <p class="stat__label">Infrastructure cost removed by the ECS migration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section section--tint" id="experience">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Experience</span>
+          <h2 class="section-title">Where I've been building.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="entry" data-reveal>
+            <div class="entry__head">
+              <h3 class="entry__role">
+                Software Development Engineer II
+                <span class="entry__org">· Amazon</span>
+              </h3>
+              <span class="entry__meta">
+                <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                Seattle · Jul 2026 — Present
+              </span>
+            </div>
+            <ul class="entry__bullets">
+              <li>Co-led the launch of LLM-powered natural language search on AWS Bedrock (Anthropic Claude) for 30M monthly users, owning the intent classification, query rewriting and suggestion generation pipelines with grounding against catalog metadata.</li>
+              <li>Owned quality and safety for the feature: a golden-set regression benchmark with human relevance grading, prompt-injection filtering, and automatic fallback to lexical search on low-confidence or timed-out generations — reaching ~0.75 F1 on library-scoped title resolution, up from ~0.3 for the lexical baseline.</li>
+              <li>Designed and led the migration of Kindle Search to AWS ECS, introducing a GraphQL gateway and asynchronous Kotlin service orchestration that reduced infrastructure cost by roughly 20%.</li>
+            </ul>
+            <div class="entry__tags">
+              <span class="chip">AWS Bedrock</span>
+              <span class="chip">Kotlin</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">ECS</span>
+              <span class="chip">Evaluation</span>
+            </div>
+          </article>
+
+          <article class="entry" data-reveal>
+            <div class="entry__head">
+              <h3 class="entry__role">
+                Software Development Engineer
+                <span class="entry__org">· Amazon</span>
+              </h3>
+              <span class="entry__meta">
+                <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                Seattle · Apr 2024 — Jun 2026
+              </span>
+            </div>
+            <ul class="entry__bullets">
+              <li>Owned development of Interactive Filter Refinement and the Android filter architecture, increasing filter usage by 540 TPS and monthly subscription borrows by 87K (~$794K annualized impact).</li>
+              <li>Led the migration of the Kindle Android search UI to Jetpack Compose, reducing UI lines of code by 54% and introducing reusable UI patterns adopted org-wide.</li>
+              <li>Instrumented 200+ core service alarms and dashboards, and resolved 20+ accessibility issues across eight services.</li>
+              <li>Mentored three new hires and won two internal hackathons, for LLM-based search personalization and content summarization.</li>
+            </ul>
+            <div class="entry__tags">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">Android</span>
+              <span class="chip">CloudWatch</span>
+            </div>
+          </article>
+
+          <article class="entry" data-reveal>
+            <div class="entry__head">
+              <h3 class="entry__role">
+                Software Development Engineer Intern
+                <span class="entry__org">· Amazon</span>
+              </h3>
+              <span class="entry__meta">
+                <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                Seattle · 2022 &amp; 2023
+              </span>
+            </div>
+            <ul class="entry__bullets">
+              <li>Created an AWS data pipeline to ingest search metrics and analyze query trends using DynamoDB, SQS, S3 and Lambda.</li>
+              <li>Implemented the Kindle Search mobile UI in ReactJS, contributing to cross-platform UI modernization.</li>
+            </ul>
+            <div class="entry__tags">
+              <span class="chip">DynamoDB</span>
+              <span class="chip">Lambda</span>
+              <span class="chip">SQS</span>
+              <span class="chip">ReactJS</span>
+            </div>
+          </article>
+
+          <article class="entry" data-reveal>
+            <div class="entry__head">
+              <h3 class="entry__role">
+                Computer Vision Research Assistant
+                <span class="entry__org">· Energy Transport Research Lab</span>
+              </h3>
+              <span class="entry__meta">
+                <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                Champaign · May — Dec 2021
+              </span>
+            </div>
+            <ul class="entry__bullets">
+              <li>Trained a Mask R-CNN model in PyTorch for liquid condensation detection, building the dataset from scratch with the VGG Image Annotator.</li>
+            </ul>
+            <div class="entry__tags">
+              <span class="chip">PyTorch</span>
+              <span class="chip">Mask R-CNN</span>
+              <span class="chip">OpenCV</span>
+            </div>
+          </article>
+
+          <article class="entry" data-reveal>
+            <div class="entry__head">
+              <h3 class="entry__role">
+                Course Assistant, Computer Systems &amp; Software Design Studio
+                <span class="entry__org">· UIUC</span>
+              </h3>
+              <span class="entry__meta">
+                <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                Champaign · Dec 2020 — May 2022
+              </span>
+            </div>
+            <ul class="entry__bullets">
+              <li>Led discussion sessions and designed assignments on programming style and computer systems fundamentals.</li>
+            </ul>
+            <div class="entry__tags">
+              <span class="chip">Teaching</span>
+              <span class="chip">Systems</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Featured work</span>
+          <h2 class="section-title">Things I've shipped.</h2>
+          <p class="section-lead">A mix of production work and side projects that started as personal itches.</p>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card work-card--featured" data-reveal style="--reveal-delay:0">
+            <div class="work-card__media work-card__media--contain">
+              <span class="work-card__badge">Production</span>
+              <img src="static/projects/kindle.png" alt="Kindle for Android search results screen" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <h3 class="work-card__title">Kindle Search for Android</h3>
+              <p class="work-card__desc">
+                Search and discovery for 30 million monthly Kindle readers: LLM-powered
+                natural language search on Bedrock, a Compose-based filter architecture,
+                and the ECS and GraphQL services behind both.
+              </p>
+              <div class="work-card__tags">
+                <span class="chip">Kotlin</span>
+                <span class="chip">Jetpack Compose</span>
+                <span class="chip">AWS Bedrock</span>
+                <span class="chip">GraphQL</span>
+                <span class="chip">ECS</span>
+                <span class="chip">ReactJS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal style="--reveal-delay:1">
+            <div class="work-card__media">
+              <span class="work-card__badge">Side project</span>
+              <img src="static/projects/finance.JPG" alt="Spreadsheet view of the personal finance organizer" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <h3 class="work-card__title">
+                Personal Finance Organizer
+                <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+              </h3>
+              <p class="work-card__desc">
+                Parses transactions from Mint and the Venmo API, applies custom labelling and
+                budget analysis, then syncs the results into Google Sheets on a schedule.
+              </p>
+              <div class="work-card__tags">
+                <span class="chip">Python</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">pygsheets</span>
+                <span class="chip">openpyxl</span>
+                <span class="chip">venmo_api</span>
+              </div>
+            </div>
+            <a class="work-card__link" href="https://github.com/kchendv/excel-finance" target="_blank" rel="noopener noreferrer">
+              <span class="sr-only">Personal Finance Organizer on GitHub</span>
+            </a>
+          </article>
+
+          <article class="work-card" data-reveal style="--reveal-delay:2">
+            <div class="work-card__media">
+              <span class="work-card__badge">Side project</span>
+              <img src="static/projects/tol.PNG" alt="Linguistics Olympiad testing platform question list" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <h3 class="work-card__title">
+                Linguistics Olympiad Platform
+                <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+              </h3>
+              <p class="work-card__desc">
+                An online testing and grading platform built for the National Linguistics
+                Olympiad, handling timed exams, submissions and grader workflows.
+              </p>
+              <div class="work-card__tags">
+                <span class="chip">Python</span>
+                <span class="chip">Flask</span>
+                <span class="chip">SQLite</span>
+                <span class="chip">JavaScript</span>
+              </div>
+            </div>
+            <a class="work-card__link" href="https://github.com/kchendv/TOL-trainer" target="_blank" rel="noopener noreferrer">
+              <span class="sr-only">Linguistics Olympiad Platform on GitHub</span>
+            </a>
+          </article>
+
+          <article class="work-card" data-reveal style="--reveal-delay:3">
+            <div class="work-card__media">
+              <span class="work-card__badge">Side project</span>
+              <img src="static/projects/proxy.JPG" alt="Messenger proxy bot conversation" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <h3 class="work-card__title">
+                Messenger Proxy Bot
+                <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+              </h3>
+              <p class="work-card__desc">
+                A chatbot that exposes Google, Wikipedia and ChatGPT through a CLI-style
+                interface inside Messenger, returning results as plain text.
+              </p>
+              <div class="work-card__tags">
+                <span class="chip">Python</span>
+                <span class="chip">fbchat</span>
+                <span class="chip">requests</span>
+                <span class="chip">pandas</span>
+              </div>
+            </div>
+            <a class="work-card__link" href="https://github.com/kchendv/messenger-proxy-bot" target="_blank" rel="noopener noreferrer">
+              <span class="sr-only">Messenger Proxy Bot on GitHub</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--tint" id="skills">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Toolkit</span>
+          <h2 class="section-title">What I work with.</h2>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-card" data-reveal style="--reveal-delay:0">
+            <div class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg class="icon"><use href="#i-cpu"/></svg>
+              </span>
+              <h3 class="skill-card__title">AI &amp; machine learning</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="chip">AWS Bedrock</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">HuggingFace PEFT</span>
+              <span class="chip">LoRA fine-tuning</span>
+              <span class="chip">RAG</span>
+              <span class="chip">Vector search</span>
+              <span class="chip">Embeddings</span>
+              <span class="chip">Prompt evaluation</span>
+              <span class="chip">Federated learning</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">OpenCV</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal style="--reveal-delay:1">
+            <div class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg class="icon"><use href="#i-code"/></svg>
+              </span>
+              <h3 class="skill-card__title">Languages</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">C++</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal style="--reveal-delay:2">
+            <div class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg class="icon"><use href="#i-server"/></svg>
+              </span>
+              <h3 class="skill-card__title">Distributed &amp; backend</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="chip">AWS ECS</span>
+              <span class="chip">DynamoDB</span>
+              <span class="chip">SQS</span>
+              <span class="chip">CloudWatch</span>
+              <span class="chip">CloudFormation</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">Spring</span>
+              <span class="chip">Kotlin Coroutines</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal style="--reveal-delay:3">
+            <div class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg class="icon"><use href="#i-mobile"/></svg>
+              </span>
+              <h3 class="skill-card__title">Frontend &amp; mobile</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">ReactJS</span>
+              <span class="chip">Swift</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal style="--reveal-delay:4">
+            <div class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg class="icon"><use href="#i-terminal"/></svg>
+              </span>
+              <h3 class="skill-card__title">Tooling</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="chip">Claude Code</span>
+              <span class="chip">Cline</span>
+              <span class="chip">Kiro</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Git</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Gradle</span>
+              <span class="chip">Maven</span>
+              <span class="chip">CI/CD</span>
+              <span class="chip">JUnit</span>
+              <span class="chip">Mockito</span>
+              <span class="chip">MockK</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal style="--reveal-delay:5">
+            <div class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg class="icon"><use href="#i-globe"/></svg>
+              </span>
+              <h3 class="skill-card__title">Spoken languages</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="chip">English — native</span>
+              <span class="chip">Mandarin — native</span>
+              <span class="chip">Japanese — JLPT N1</span>
+              <span class="chip">Spanish — conversational</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-head" data-reveal style="margin-top: clamp(3.5rem, 7vw, 5.5rem)">
+          <span class="eyebrow">Education &amp; research</span>
+          <h2 class="section-title">What I've studied.</h2>
+        </div>
+
+        <div class="credentials">
+          <article class="credential" data-reveal style="--reveal-delay:0">
+            <div class="credential__meta">
+              <span>May 2024 — Aug 2026</span>
+              <span class="credential__gpa">4.0 GPA</span>
+            </div>
+            <h3 class="credential__title">Master of Computer Science</h3>
+            <p class="credential__sub">University of Illinois Urbana-Champaign</p>
+            <ul class="credential__list">
+              <li>Deep Learning for Healthcare, Natural Language Processing, Applied Machine Learning, Cloud Computing</li>
+            </ul>
+          </article>
+
+          <article class="credential" data-reveal style="--reveal-delay:1">
+            <div class="credential__meta">
+              <span>Aug 2020 — May 2023</span>
+              <span class="credential__gpa">4.0 GPA</span>
+            </div>
+            <h3 class="credential__title">B.S. Computer Science + Linguistics</h3>
+            <p class="credential__sub">University of Illinois Urbana-Champaign</p>
+            <ul class="credential__list">
+              <li>Bronze Tablet graduate (top 3%), Dean's List, 2023 Outstanding Undergraduate Student</li>
+              <li>President, LeetCode @ UIUC</li>
+            </ul>
+          </article>
+
+          <article class="credential credential--wide" data-reveal style="--reveal-delay:2">
+            <div class="credential__meta">
+              <span>IEEE CCGrid 2026</span>
+              <span class="credential__gpa">Publication</span>
+            </div>
+            <h3 class="credential__title">
+              <a class="credential__link" href="https://ieeexplore.ieee.org/document/11619224" target="_blank" rel="noopener noreferrer">
+                Heterogeneous-Resource-Aware Federated Learning with Intelligent LoRA Allocation and Aggregation
+                <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+              </a>
+            </h3>
+            <p class="credential__authors">Y. Xie, Y. Lian, K. Chen, A. Latif, L. Zhao, R. Farivar</p>
+            <p class="credential__sub">
+              HRALoRA adapts LoRA rank and aggregation to heterogeneous client memory and bandwidth,
+              cutting communication cost by about half while improving accuracy on distributed
+              fine-tuning benchmarks.
+            </p>
+            <ul class="credential__list">
+              <li>My contribution: designed and ran the evaluation across two base models and six data partitions spanning IID and non-IID splits, including ablations on rank allocation and bandwidth heterogeneity.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__card" data-reveal="scale">
+          <span class="eyebrow" style="justify-content:center">Contact</span>
+          <h2 class="contact__title">Let's build something.</h2>
+          <p class="contact__lead">
+            I'm always up for talking about applied LLMs, distributed systems, or a project
+            that needs a second pair of hands. My inbox is open.
+          </p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:kchendv@gmail.com">
+              kchendv@gmail.com
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/kchendv/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+              <svg class="icon icon--filled" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://github.com/kchendv" target="_blank" rel="noopener noreferrer">
+              GitHub
+              <svg class="icon icon--filled" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span data-year>2026</span> Kevin Chen. Built by hand, no framework.</p>
+      <div class="footer__links">
+        <a href="static/resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        <a href="https://github.com/kchendv" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/kchendv/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js" defer></script>
+</body>
+</html>

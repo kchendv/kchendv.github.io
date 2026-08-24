@@ -1,0 +1,189 @@
+/* ==========================================================================
+   THEME
+   --------------------------------------------------------------------------
+   Every colour, font and shape value used by the site is declared here.
+   style.css only ever references these variables, so re-skinning the whole
+   page means editing this file and nothing else.
+
+   QUICK START
+   1. Want a different accent colour? Change --accent / --accent-2 in BOTH
+      the [data-theme="light"] and [data-theme="dark"] blocks below.
+   2. Want a wholesale palette swap? Copy one of the PRESETS at the bottom
+      of this file over the corresponding block.
+   3. Want to change which theme loads first? Edit DEFAULT_THEME in
+      static/js/main.js ("dark", "light" or "system").
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LIGHT PALETTE
+   -------------------------------------------------------------------------- */
+[data-theme="light"] {
+  /* Backgrounds, from furthest back to closest to the reader. */
+  --bg: #f6f8fb;
+  --bg-tint: #eef3f8;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --surface-3: #e4ebf3;
+
+  /* Text. */
+  --text: #0c1a26;
+  --text-strong: #04101a;
+  --text-muted: #55697d;
+  --text-faint: #8798a9;
+
+  /* Lines and dividers. */
+  --border: rgb(12 26 40 / 10%);
+  --border-strong: rgb(12 26 40 / 18%);
+
+  /* Accents. --accent leads, --accent-2 is the gradient partner. */
+  --accent: #0d8ba1;
+  --accent-2: #5a5fe0;
+  --accent-hover: #0a7386;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgb(13 139 161 / 12%);
+  --accent-softer: rgb(13 139 161 / 6%);
+
+  /* Ambient hero glow. */
+  --glow-1: rgb(13 139 161 / 30%);
+  --glow-2: rgb(90 95 224 / 24%);
+  --glow-3: rgb(236 72 153 / 14%);
+
+  /* Elevation. */
+  --shadow-sm: 0 1px 2px rgb(12 26 40 / 6%), 0 2px 8px rgb(12 26 40 / 4%);
+  --shadow-md: 0 4px 12px rgb(12 26 40 / 8%), 0 12px 32px rgb(12 26 40 / 6%);
+  --shadow-lg: 0 12px 28px rgb(12 26 40 / 10%), 0 32px 64px rgb(12 26 40 / 10%);
+  --shadow-accent: 0 8px 28px rgb(13 139 161 / 22%);
+
+  /* Opacity of the faint grid texture behind the hero. */
+  --grid-opacity: 0.5;
+
+  color-scheme: light;
+}
+
+/* --------------------------------------------------------------------------
+   2. DARK PALETTE
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] {
+  --bg: #080b10;
+  --bg-tint: #0c1118;
+  --surface: #101821;
+  --surface-2: #16202b;
+  --surface-3: #1e2a37;
+
+  --text: #e6edf5;
+  --text-strong: #f8fbfe;
+  --text-muted: #94a7bb;
+  --text-faint: #6b7f94;
+
+  --border: rgb(255 255 255 / 9%);
+  --border-strong: rgb(255 255 255 / 16%);
+
+  --accent: #45c8dc;
+  --accent-2: #8b8cff;
+  --accent-hover: #6fd6e6;
+  --accent-contrast: #04141a;
+  --accent-soft: rgb(69 200 220 / 14%);
+  --accent-softer: rgb(69 200 220 / 7%);
+
+  --glow-1: rgb(69 200 220 / 26%);
+  --glow-2: rgb(139 140 255 / 24%);
+  --glow-3: rgb(244 114 182 / 14%);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%), 0 2px 8px rgb(0 0 0 / 24%);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 40%), 0 12px 32px rgb(0 0 0 / 30%);
+  --shadow-lg: 0 12px 28px rgb(0 0 0 / 44%), 0 32px 64px rgb(0 0 0 / 40%);
+  --shadow-accent: 0 8px 28px rgb(69 200 220 / 20%);
+
+  --grid-opacity: 0.35;
+
+  color-scheme: dark;
+}
+
+/* --------------------------------------------------------------------------
+   3. SCHEME-INDEPENDENT TOKENS
+   Shared by both palettes: type, spacing, shape, motion.
+   -------------------------------------------------------------------------- */
+:root {
+  --font-display: "Space Grotesk", "CircularStd", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", "CircularStd", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, monospace;
+
+  /* Fluid type scale: shrinks on phones, grows on desktops, no breakpoints. */
+  --step--1: clamp(0.78rem, 0.75rem + 0.15vw, 0.86rem);
+  --step-0: clamp(0.95rem, 0.92rem + 0.2vw, 1.05rem);
+  --step-1: clamp(1.1rem, 1.04rem + 0.35vw, 1.3rem);
+  --step-2: clamp(1.35rem, 1.2rem + 0.7vw, 1.75rem);
+  --step-3: clamp(1.7rem, 1.4rem + 1.4vw, 2.5rem);
+  --step-4: clamp(2.1rem, 1.5rem + 2.8vw, 4rem);
+  --step-5: clamp(2.6rem, 1.6rem + 4.4vw, 5.5rem);
+
+  /* Shape. */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  /* Layout. */
+  --page-max: 1180px;
+  --page-gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-gap: clamp(4.5rem, 10vw, 9rem);
+  --header-height: 68px;
+
+  /* Motion. Set --speed to 0.01 to effectively disable transitions. */
+  --speed: 1;
+  --dur-fast: calc(160ms * var(--speed));
+  --dur: calc(280ms * var(--speed));
+  --dur-slow: calc(680ms * var(--speed));
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Derived gradients — these follow whichever accents are active. */
+  --gradient-accent: linear-gradient(120deg, var(--accent), var(--accent-2));
+  --gradient-text: linear-gradient(100deg, var(--text-strong) 20%, var(--accent) 60%, var(--accent-2));
+  --gradient-surface: linear-gradient(160deg, var(--surface), var(--surface-2));
+}
+
+/* ==========================================================================
+   PRESETS
+   Paste a block over the matching palette above to switch the whole site.
+   --------------------------------------------------------------------------
+
+   EMBER — warm amber and rose, dark palette
+     --accent: #f0a94c;  --accent-2: #f4707f;  --accent-hover: #f7bd72;
+     --accent-contrast: #1c1105;
+     --accent-soft: rgb(240 169 76 / 14%);
+     --accent-softer: rgb(240 169 76 / 7%);
+     --glow-1: rgb(240 169 76 / 26%);
+     --glow-2: rgb(244 112 127 / 22%);
+     --glow-3: rgb(168 85 247 / 14%);
+     --shadow-accent: 0 8px 28px rgb(240 169 76 / 22%);
+     --bg: #0d0a08;  --bg-tint: #13100c;
+     --surface: #1a1511;  --surface-2: #221b16;  --surface-3: #2c231c;
+
+   MOSS — green and lime, dark palette
+     --accent: #5ed39b;  --accent-2: #a3e635;  --accent-hover: #7ee0b0;
+     --accent-contrast: #04150d;
+     --accent-soft: rgb(94 211 155 / 14%);
+     --accent-softer: rgb(94 211 155 / 7%);
+     --glow-1: rgb(94 211 155 / 26%);
+     --glow-2: rgb(163 230 53 / 20%);
+     --glow-3: rgb(56 189 248 / 14%);
+     --shadow-accent: 0 8px 28px rgb(94 211 155 / 20%);
+     --bg: #070c0a;  --bg-tint: #0b1210;
+     --surface: #0f1815;  --surface-2: #15211d;  --surface-3: #1d2c27;
+
+   MONO — no hue at all, dark palette
+     --accent: #e2e8f0;  --accent-2: #94a3b8;  --accent-hover: #ffffff;
+     --accent-contrast: #0a0a0a;
+     --accent-soft: rgb(226 232 240 / 12%);
+     --accent-softer: rgb(226 232 240 / 6%);
+     --glow-1: rgb(226 232 240 / 14%);
+     --glow-2: rgb(148 163 184 / 12%);
+     --glow-3: rgb(100 116 139 / 10%);
+     --shadow-accent: 0 8px 28px rgb(0 0 0 / 50%);
+     --bg: #0a0a0b;  --bg-tint: #0f0f11;
+     --surface: #141416;  --surface-2: #1b1b1e;  --surface-3: #242428;
+
+   ========================================================================== */
